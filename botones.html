@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,25 +8,64 @@
 </head>
 <style>
     img {
-        width: 20px;
-        
+        width: 25px;
+
     }
-    a{
+
+    div{
+        display: flex;
+    }
+
+    a:hover {
+        scale: 1.08;
+        opacity: 0.7;
+    }
+
+    a {
         text-decoration: none;
-        color: black;
-        background: linear-gradient( to right, red, blue);
+        color: white;
         display: flex;
         align-items: center;
         width: fit-content;
         gap: 5px;
         padding: 5px;
+        border-radius: 7px;
+        font-size: 20px;
+        transition: all 350ms;
+        margin: 5px;
     }
+
+    #coso{
+        background: linear-gradient(to right, red, blue);
+    }
+
+    #coso1{
+        background-color: rgb(65, 23, 163);
+    }
+
+    #coso2{
+        background-color: rgb(147, 223, 34);
+    }
+
+
 </style>
+
 <body>
-    <a href="https://www.youtube.com/">
-        <img src="./imagenes/youtube-brands-solid.svg" alt="Youtube">
-        Youtube
-    </a>
+    <div>
+        <a href="https://www.youtube.com/" target="_blank" id="coso">
+            <img src="./imagenes/youtube-brands-solid.svg" alt="Youtube">
+            Youtube
+        </a>
+        <a href="https://www.twitch.tv/" id="coso1">
+            <img src="./imagenes/twitch-brands-solid.svg" alt="Twitch">
+            Twitch
+        </a>
+        <a href="https://kick.com/" id="coso2">
+            <img src="./imagenes/kickstarter-brands-solid.svg" alt="Kick">
+            Kick
+        </a>
+    </div>
 
 </body>
+
 </html>
